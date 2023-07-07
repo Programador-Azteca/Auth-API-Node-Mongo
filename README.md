@@ -31,6 +31,7 @@ Ejemplo de solicitud:
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"email": "usuario@ejemplo.com", "password": "contraseña"}' http://localhost:3000/api/auth/register
+```
 
 
 ### Inicio de sesión
@@ -44,6 +45,7 @@ Ejemplo de solicitud:
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"email": "usuario@ejemplo.com", "password": "contraseña"}' http://localhost:3000/api/auth/login
+```
 
 ### Restablecimiento de contraseña
 
@@ -55,7 +57,7 @@ Ejemplo de solicitud:
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer <TuToken>" -d '{"password": "nuevaContraseña"}' http://localhost:3000/api/auth/resetPassword
-````
+```
 
 # Docker
 
@@ -65,4 +67,4 @@ Una vez instalado Docker, puedes usar el siguiente comando para iniciar un conte
 
 ```bash
 docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=secret -e MONGO_INITDB_DATABASE=mongo-example --name mongodb mongo
-````
+```
